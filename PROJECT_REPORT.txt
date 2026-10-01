@@ -1,0 +1,35 @@
+ANIMAL CLASSIFICATION AI - PROJECT REPORT
+
+1. TITLE
+Animal Classification AI
+
+2. OBJECTIVE
+To develop a web application that accepts an image and uses an artificial intelligence image-classification model to identify the most likely classes.
+
+3. PROBLEM STATEMENT
+Manually identifying objects and animals in images can be time-consuming. This project provides an automated image-classification interface using a pretrained deep-learning model.
+
+4. TECHNOLOGIES USED
+Python, Flask, HTML, CSS, JavaScript, PyTorch, Hugging Face Transformers and Pillow.
+
+5. WORKING
+Step 1: The user opens the Flask web application.
+Step 2: The user selects an image.
+Step 3: JavaScript sends the image to the Flask backend.
+Step 4: The backend converts the image into a format accepted by the model.
+Step 5: The pretrained Vision Transformer performs image classification.
+Step 6: The application returns the top five predictions and confidence scores.
+Step 7: The frontend displays the results using progress bars.
+
+6. EXPECTED OUTPUT
+The application displays the predicted classes with their confidence percentages.
+
+7. FUTURE ENHANCEMENTS
+- Train a custom CNN using a dedicated animal dataset.
+- Add more animal categories.
+- Store prediction history in MySQL.
+- Add user authentication.
+- Deploy the application online.
+
+8. CONCLUSION
+The project demonstrates how a pretrained deep-learning image classifier can be integrated into a Flask web application to provide an interactive AI-based classification system.
