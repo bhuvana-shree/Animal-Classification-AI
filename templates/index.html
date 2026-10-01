@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Classification AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <div class="badge">AI / IMAGE CLASSIFICATION</div>
+            <h1>Animal Classification</h1>
+            <p class="subtitle">
+                Upload an image and let the AI model identify the most likely objects or animals.
+            </p>
+
+            <form id="uploadForm">
+                <label class="upload-box" for="imageInput">
+                    <span class="upload-icon">📷</span>
+                    <span id="fileText">Choose an image</span>
+                    <small>JPG, JPEG, PNG or WEBP</small>
+                </label>
+                <input id="imageInput" name="image" type="file"
+                       accept="image/png,image/jpeg,image/webp" required>
+
+                <img id="preview" class="preview" alt="Selected image preview">
+
+                <button id="classifyButton" type="submit">Classify Image</button>
+            </form>
+
+            <div id="status" class="status"></div>
+
+            <section id="results" class="results hidden">
+                <h2>Prediction Results</h2>
+                <div id="predictionList"></div>
+            </section>
+        </section>
+
+        <footer>
+            Built with Python, Flask, Hugging Face Transformers and Vision Transformer (ViT).
+        </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
